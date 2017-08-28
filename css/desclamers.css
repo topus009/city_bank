@@ -23,29 +23,22 @@
     font-size: 17px;
     margin-right: 5px;
 }
-@media all and (max-width: 320px) {
+/* ================================================================
+===================================================================
+================================================================ */
+
+@media all and (max-width: 1024px) {
     .desclamers {
-        width: 320px;
-        height: 337px;
+        /* width: 640px; */
+        /* height: 180px; */
     }
     .desclamers > div {
-        margin-left: 10px;
-        padding-top: 12px;
-        height: 310px;
+        /* margin-left: 25px; */
+        /* margin-right: 25px; */
+        /* height: 160px; */
     }
     .desclamers .item {
-        margin-left: 13px;
-        padding-top: 4px;
-        line-height: 22px;
-        padding-bottom: 6px;
-        padding-left: 12px;
-        padding-right: 2px;
-        position: relative;
-    }
-    .desclamers .item > span:first-child {
-        position: absolute;
-        top: 9px;
-        left: 0px;
+        /* line-height: 25px; */
     }
 }
 
@@ -55,6 +48,25 @@
 ================================================================ */
 
 @media all and (max-width: 640px) {
+    .desclamers {
+        width: 640px;
+        height: 180px;
+    }
+    .desclamers > div {
+        margin-left: 25px;
+        margin-right: 25px;
+        height: 160px;
+    }
+    .desclamers .item {
+        line-height: 25px;
+    }
+}
+
+/* ================================================================
+===================================================================
+================================================================ */
+
+@media all and (max-width: 320px) {
     .desclamers {
         width: 320px;
         height: 337px;
