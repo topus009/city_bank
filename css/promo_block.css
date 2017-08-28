@@ -57,20 +57,17 @@
 
 @media all and (max-width: 1280px) {
     .promo_block {
-        /* width: 1024px; */
-        /* z-index: -1; */
+        width: 1280px;
     }
     .promo_block:after {
-        /* top: 25px; */
-        /* left: -25px; */
-        /* transform: scale(.75); */
+        top: 25px;
+        left: 90px;
     }
     .promo_block .header {
-        /* margin-left: 615px; */
+        margin-left: 800px;
     }
     .promo_block ol {
-        /* margin-left: 415px; */
-        /* padding-top: 0; */
+        margin-left: 610px;
     }
 }
 

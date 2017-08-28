@@ -32,12 +32,11 @@
 
 @media all and (max-width: 1280px) {
     .desclamers {
-        /* width: 1024px; */
-        /* height: 130px; */
+        width: 1280px;
+        height: 130px;
     }
     .desclamers > div {
-        /* margin-left: 25px; */
-        /* height: 110px; */
+        margin-left: 140px;
     }
 }
 

@@ -259,23 +259,12 @@
 ================================================================ */
 
 @media all and (max-width: 1280px) {
-    .banner {
-        /* background-repeat: no-repeat; */
-        /* background-position: center; */
-    }
     .banner-text {
-        /* padding-left: 20px; */
-        /* padding-right: 20px; */
-        /* padding-top: 12%; */
-    }
-    .banner-text .header {
-        /* font-size: 40px; */
-    }
-    .banner-text .subline {
-        /* width: calc(50% - 23px); */
+        padding-left: 200px;
+        padding-top: 7%;
     }
     .banner .form {
-        /* right: 19px; */
+        right: 100px;
     }
 }
 
