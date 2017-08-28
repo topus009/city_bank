@@ -1,0 +1,129 @@
+.promo_block {
+    font-weight: bold;
+    position: relative;
+    width: 1600px;
+    height: 535px;
+    margin: 0 auto;
+    color: #48b;
+    background-color: #eee;
+}
+.promo_block:after {
+    position: absolute;
+    top: -35px;
+    left: 219px;
+    content: url(./../src/07.png);
+}
+.promo_block .header {
+    font-size: 48px;
+    margin-left: 854px;
+    padding-top: 55px;
+}
+.promo_block ol {
+    margin-top: 35px;
+    margin-left: 766px;
+    list-style: none;
+}
+.promo_block ol li {
+    font-size: 18px;
+    line-height: 12px;
+}
+.promo_block ol span {
+    background: #48b;
+    padding: 5px 10px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+}
+.promo_block ol p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    padding-bottom: 18px;
+    padding-top: 19px;
+    border-bottom: 1px dashed #48b;
+}
+.promo_block ol li:nth-child(5) p,
+.promo_block ol li:nth-child(6) p {
+    margin-top: -1px;
+}
+.promo_block ol li:nth-child(6) p {
+    border-bottom: none;
+}
+@media all and (max-width: 320px) {
+    .promo_block {
+        width: 320px;
+        height: 585px;
+        margin-top: -130px;
+        z-index: -1;
+    }
+    .promo_block:after {
+        content: none;
+    }
+    .promo_block .header {
+        display: none;
+    }
+    .promo_block ol {
+        margin-left: -30px;
+        padding-top: 130px;
+        padding-top: 95px;
+    }
+    .promo_block ol li {
+        position: relative;
+    }
+    .promo_block ol span {
+        position: absolute;
+        padding: 10px;
+        top: -webkit-calc(50% - 16px);
+        top: calc(50% - 16px);
+    }
+    .promo_block ol p {
+        width: 229px;
+        line-height: 23px;
+        margin-left: 51px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+
+/* ================================================================
+===================================================================
+================================================================ */
+
+
+@media all and (max-width: 640px) {
+    .promo_block {
+        width: 320px;
+        height: 585px;
+        margin-top: -130px;
+        z-index: -1;
+    }
+    .promo_block:after {
+        content: none;
+    }
+    .promo_block .header {
+        display: none;
+    }
+    .promo_block ol {
+        margin-left: -30px;
+        padding-top: 130px;
+        padding-top: 95px;
+    }
+    .promo_block ol li {
+        position: relative;
+    }
+    .promo_block ol span {
+        position: absolute;
+        padding: 10px;
+        top: -webkit-calc(50% - 16px);
+        top: calc(50% - 16px);
+    }
+    .promo_block ol p {
+        width: 229px;
+        line-height: 23px;
+        margin-left: 51px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}

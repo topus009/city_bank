@@ -1,0 +1,131 @@
+#modal_win {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+}
+#modal_win .box {
+    position: absolute;
+    top: -webkit-calc(50vh - 41px);
+    top: calc(50vh - 41px);
+    left: -webkit-calc(50vw - 302px);
+    left: calc(50vw - 302px);
+    width: 590px;
+    height: 300px;
+    border-radius: 3px;
+    background-color: white;
+}
+#modal_win .header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    padding-top: 19px;
+    padding-left: 20px;
+}
+#modal_win .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(./../src/icon_03.png) no-repeat;
+    cursor: pointer;
+}
+#modal_win p {
+    padding-left: 20px;
+    padding-top: 4px;
+    padding-right: 18px;
+    line-height: 19px;
+}
+#modal_win button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 16px;
+    width: 125px;
+    height: 30px;
+    color: #eee;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#48b), to(#2e5d80));
+    background-image: -webkit-linear-gradient(top, #48b, #2e5d80);
+    background-image: linear-gradient(to bottom, #48b, #2e5d80);
+    cursor: pointer;
+}
+#modal_win .cancel {
+    right: 143px;
+    background-image: none;
+    color: #aaaaaa;
+    background-color: transparent;
+}
+.display_block {
+    display: block !important;
+}
+@media all and (max-width: 320px) {
+    #modal_win .box {
+        width: 300px;
+        height: 382px;
+        top: -webkit-calc(50vh - 175px);
+        top: calc(50vh - 175px);
+        left: -webkit-calc(50vw - 150px);
+        left: calc(50vw - 150px);
+        height: auto;
+    }
+    #modal_win .header {
+        padding-left: 9px;
+    }
+    #modal_win .close {
+        right: 10px;
+    }
+    #modal_win p {
+        padding-left: 10px;
+        padding-top: 6px;
+        line-height: 19px;
+        padding-right: 12px;
+        margin-bottom: 85px;
+    }
+    #modal_win button {
+        right: 10px;
+        bottom: 30px;
+    }
+}
+
+
+/* ================================================================
+===================================================================
+================================================================ */
+
+
+@media all and (max-width: 640px) {
+    #modal_win .box {
+        width: 300px;
+        height: 382px;
+        top: -webkit-calc(50vh - 175px);
+        top: calc(50vh - 175px);
+        left: -webkit-calc(50vw - 150px);
+        left: calc(50vw - 150px);
+        height: auto;
+    }
+    #modal_win .header {
+        padding-left: 9px;
+    }
+    #modal_win .close {
+        right: 10px;
+    }
+    #modal_win p {
+        padding-left: 10px;
+        padding-top: 6px;
+        line-height: 19px;
+        padding-right: 12px;
+        margin-bottom: 85px;
+    }
+    #modal_win button {
+        right: 10px;
+        bottom: 30px;
+    }
+}

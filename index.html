@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon.ico">
+   <title>CityBank</title>
+   <link href="./css/styles.css" rel="stylesheet">
+   <link href="./css/banner.css" rel="stylesheet">
+   <link href="./css/cards.css" rel="stylesheet">
+   <link href="./css/promo_block.css" rel="stylesheet">
+   <link href="./css/desclamers.css" rel="stylesheet">
+   <link href="./css/popup.css" rel="stylesheet">
+</head>
+<body>
+<!-- ============== BANNER ==================================== -->
+<div class="banner">
+  <div class="banner-text">
+    <span class="header">Banner header</span>
+    <div class="subline">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud</div>
+  </div>
+  <form class="form">
+    <span class="header">Request form</span>
+    <div id="email_form" class="input_field" data-title="Enter correct E-Mail">
+      <label class="email" for="email">Enter your E-Mail</label>
+      <input  id="email" type="email" autocomplete="off"/>
+      <div class="reset"></div>
+    </div>
+    <div id="name_form" class="input_field" data-title="Enter correct Name">
+      <label class="name" for="name">Enter your Name</label>
+      <input  id="name" type="text" autocomplete="off"/>
+      <div class="reset"></div>      
+    </div>
+      <div id="select" class="input_field">
+        <ul id="select_ul" class="closed_select" data-title="Select your Country">
+          <span id="country">Select your country</span>
+          <li class="closed_li">Russia</li>
+          <li class="closed_li">Ukraine</li>
+          <li class="closed_li">Belarus</li>
+          <li class="closed_li">Kazakhstan</li>
+          <li class="closed_li">Azerbaijan</li>
+          <li class="closed_li">Armenia</li>
+          <li class="closed_li">Georgia</li>
+          <li class="closed_li">Kyrgyzstan</li>
+          <li class="closed_li">Tajikistan</li>
+          <li class="closed_li">Uzbekistan</li>
+          <li class="closed_li">Turkmenistan</li>  
+        </ul>
+      </div>
+      <input class="checkbox" id="checkbox" type="checkbox"/>
+      <label class="checkbox_label" for="checkbox" data-title="Read Terms">I agree with Terms & Conditions</label>
+      <input id="submit" class="submit" type="submit" value="Submit">
+      <a href="#">Hyperlink</a>
+  </form>
+</div>
+<!-- ============== BANNER-end ================================ -->
+<!-- ============== CARDS ===================================== -->
+<div class="cards_">
+  <div class="row row_1">
+    <div class="card">
+      <div class="post"><div class="title">Post header 1<a href="#"></a></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div></div>
+    <div class="card">
+      <div class="post"><div class="title">Post header 2<a href="#"></a></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div></div>
+    <div class="card">
+      <div class="post"><div class="title">Post header 3<a href="#"></a></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div></div></div>
+  <div class="row row_2">
+    <div class="card">
+      <div class="post"><div class="title">Post header 4<a href="#"></a></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div></div>
+    <div class="card">
+      <div class="post"><div class="title">Post header 5<a href="#"></a></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div></div>      
+  </div>
+</div>
+<!-- ============== CARDS-end ================================= -->
+<!-- ============== PROMO_BLOCK-end =========================== -->
+<div class="promo_block">
+  <div class="header">Title text</div>
+  <ol>
+    <li><span>1</span><p>Duis aute irure dolor in reprehenderit<sup><small>1</small></sup> in voluptate velit</p></li>
+    <li><span>2</span><p>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p></li>
+    <li><span>3</span><p>Ut enim ad minim veniam, quis nostrud exercitation</p></li>
+    <li><span>4</span><p>Et dolore magna aliqua</p></li>
+    <li><span>5</span><p>Sed do eiusmod tempor<sup><small>2</small></sup> incididunt ut labore</p></li>
+    <li><span>6</span><p>Lorem ipsum dolor sit amet<sup><small>3</small></sup> consectetur adipisicing elit</p></li>
+  </ol>
+</div>
+<!-- ============== PROMO_BLOCK-end =========================== -->
+<!-- ============== DESCLAMERS ================================ -->
+<div class="desclamers">
+  <div>
+    <div class="item"><span><sup>1</sup></span><span>Reprehenderit - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</span></div>
+    <div class="item"><span><sup>2</sup></span><span>Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+    <div class="item"><span><sup>3</sup></span><span>Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span></div>
+  </div>
+</div>
+<!-- ============== DESCLAMERS-end ============================ -->
+<!-- ============== MODAL-WIN ================================= -->
+
+<div id="modal_win">
+  <div class="box">
+    <div class="close"></div>
+    <div class="header">External link</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</p>
+    <button type="button" class="cancel">Cancel</button>
+    <button type="button" class="accept">Accept</button>
+  </div>
+</div>
+<!-- ============== MODAL-WIN-end ============================ -->
+   <script src="./js/script.js"></script>
+</body>
+</html>

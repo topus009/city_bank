@@ -1,0 +1,242 @@
+.cards_ {
+    width: 1190px;
+    height: 430px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+.cards_ .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+}
+.cards_ .row_1 {
+    margin-bottom: -5px;
+    padding-top: 30px;
+}
+.cards_ .row_2 {
+    padding-top: 30px;
+}
+.cards_ .card {
+    font-size: 14px;
+    line-height: 1.29;
+    overflow: hidden;
+    height: 150px;
+    margin-right: 10px;
+    color: #eee;
+    background-repeat: round;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+.cards_ .card .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    padding-top: 9px;
+    padding-left: 24px;
+}
+.cards_ .card .title a {
+    position: absolute;
+    z-index: 3;
+    top: 8px;
+    right: 20px;
+    width: 18px;
+    height: 18px;
+    content: '';
+}
+.cards_ .row_2 .card .title a {
+    top: 11px;
+    right: 15px;
+}
+.cards_ .row_1 .card .title {
+    padding-top: 5px;
+}
+.cards_ .card .title:after {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    content: url(./../src/icon_01.png);
+}
+.cards_ .row_2 .card .title:after {
+    top: 9px;
+    right: 15px;
+}
+.cards_ .card p {
+    margin-top: 9px;
+    padding-right: 21px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+}
+.cards_ .card .post {
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    background-color: rgba(68, 136, 187, .75);
+}
+.cards_ .row_1 .card .post {
+    height: 150px;
+    padding-top: 2px;
+    -webkit-transform: translate(0, 73%);
+        -ms-transform: translate(0, 73%);
+            transform: translate(0, 73%);
+}
+.cards_ .row_2 .card .post {
+    height: 150px;
+    -webkit-transform: translate(0, 73%);
+        -ms-transform: translate(0, 73%);
+            transform: translate(0, 73%);
+}
+.cards_ .card:hover .post {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    height: 170px;
+    padding-top: 5px !important;
+}
+.cards_ .row_1 .card {
+    width: 390px;
+}
+.cards_ .row_1 .card:last-child,
+.cards_ .row_2 .card:last-child {
+    margin-right: 0;
+}
+.cards_ .row_2 .card {
+    width: 590px;
+}
+.cards_ .row_1 .card:nth-child(1) {
+    background-image: url(./../src/02.png);
+}
+.cards_ .row_1 .card:nth-child(2) {
+    background-image: url(./../src/03.png);
+}
+.cards_ .row_1 .card:nth-child(3) {
+    background-image: url(./../src/04.png);
+}
+.cards_ .row_2 .card:nth-child(1) {
+    background-image: url(./../src/05.png);
+}
+.cards_ .row_2 .card:nth-child(2) {
+    background-image: url(./../src/06.png);
+}
+@media all and (max-width: 320px) {
+    .cards_ {
+        width: 320px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .cards_ .row {
+        display: block;
+        -webkit-box-pack: normal;
+        -webkit-justify-content: normal;
+            -ms-flex-pack: normal;
+                justify-content: normal;
+    }
+    .cards_ .row_1 {
+        padding-top: 0;
+    }
+    .cards_ .row_2 {
+        padding-top: 5px;
+    }
+    .cards_ .card {
+        margin: 0 10px;
+        width: 300px !important;
+        margin-bottom: 20px;
+        height: 170px;
+        background-repeat: space;
+        -webkit-background-size: cover;
+                background-size: cover;
+    }
+    .cards_ .card p {
+        margin-top: 14px;
+        padding-left: 20px;
+        padding-right: 8px;
+    }
+    .cards_ .card .title {
+        padding-top: 3px !important;
+        padding-left: 23px;
+    }
+    .cards_ .card .title:after {
+        top: 4px !important;
+        right: 11px !important;
+    }
+    .cards_ .card .post {
+        -webkit-transform: translate(0, 90%) !important;
+            -ms-transform: translate(0, 90%) !important;
+                transform: translate(0, 90%) !important;
+    }
+    .cards_ .row_1 .card .post {
+        padding-top: 0;
+    }
+    .cards_ .card:hover .post {
+        -webkit-transform: translate(0, 0) !important;
+            -ms-transform: translate(0, 0) !important;
+                transform: translate(0, 0) !important;
+    }
+}
+
+
+/* ================================================================
+===================================================================
+================================================================ */
+
+
+@media all and (max-width: 640px) {
+    .cards_ {
+        width: 320px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .cards_ .row {
+        display: block;
+        -webkit-box-pack: normal;
+        -webkit-justify-content: normal;
+            -ms-flex-pack: normal;
+                justify-content: normal;
+    }
+    .cards_ .row_1 {
+        padding-top: 0;
+    }
+    .cards_ .row_2 {
+        padding-top: 5px;
+    }
+    .cards_ .card {
+        margin: 0 10px;
+        width: 300px !important;
+        margin-bottom: 20px;
+        height: 170px;
+        background-repeat: space;
+        -webkit-background-size: cover;
+                background-size: cover;
+    }
+    .cards_ .card p {
+        margin-top: 14px;
+        padding-left: 20px;
+        padding-right: 8px;
+    }
+    .cards_ .card .title {
+        padding-top: 3px !important;
+        padding-left: 23px;
+    }
+    .cards_ .card .title:after {
+        top: 4px !important;
+        right: 11px !important;
+    }
+    .cards_ .card .post {
+        -webkit-transform: translate(0, 90%) !important;
+            -ms-transform: translate(0, 90%) !important;
+                transform: translate(0, 90%) !important;
+    }
+    .cards_ .row_1 .card .post {
+        padding-top: 0;
+    }
+    .cards_ .card:hover .post {
+        -webkit-transform: translate(0, 0) !important;
+            -ms-transform: translate(0, 0) !important;
+                transform: translate(0, 0) !important;
+    }
+}

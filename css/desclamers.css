@@ -1,0 +1,81 @@
+.desclamers {
+    font-size: 18px;
+    width: 1600px;
+    height: 141px;
+    margin: 0 auto;
+    padding-top: 28px;
+    color: #48b;
+}
+.desclamers > div {
+    height: 111px;
+    margin-left: 205px;
+    margin-top: -8px;
+    border-left: 5px solid #48b;
+    padding-top: 9px;
+}
+.desclamers .item {
+    line-height: 34px;
+    margin-left: 22px;
+    padding-top: 1px;
+}
+.desclamers .item > span:first-child {
+    line-height: 0px;
+    font-size: 17px;
+    margin-right: 5px;
+}
+@media all and (max-width: 320px) {
+    .desclamers {
+        width: 320px;
+        height: 337px;
+    }
+    .desclamers > div {
+        margin-left: 10px;
+        padding-top: 12px;
+        height: 310px;
+    }
+    .desclamers .item {
+        margin-left: 13px;
+        padding-top: 4px;
+        line-height: 22px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 2px;
+        position: relative;
+    }
+    .desclamers .item > span:first-child {
+        position: absolute;
+        top: 9px;
+        left: 0px;
+    }
+}
+
+
+/* ================================================================
+===================================================================
+================================================================ */
+
+@media all and (max-width: 640px) {
+    .desclamers {
+        width: 320px;
+        height: 337px;
+    }
+    .desclamers > div {
+        margin-left: 10px;
+        padding-top: 12px;
+        height: 310px;
+    }
+    .desclamers .item {
+        margin-left: 13px;
+        padding-top: 4px;
+        line-height: 22px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 2px;
+        position: relative;
+    }
+    .desclamers .item > span:first-child {
+        position: absolute;
+        top: 9px;
+        left: 0px;
+    }
+}
