@@ -43,6 +43,13 @@
     padding-top: 19px;
     border-bottom: 1px dashed #48b;
 }
+.promo_block ol p a:link {
+    text-decoration: none;
+    color: #48b;    
+}
+.promo_block ol p a:visited {
+    color: #48b;
+}
 .promo_block ol li:nth-child(5) p,
 .promo_block ol li:nth-child(6) p {
     margin-top: -1px;

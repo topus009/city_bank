@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function(){
     var modal_win = document.getElementById('modal_win');
     var modal_win_buttons = document.querySelectorAll('#modal_win button, #modal_win .close');
     var email_regexp = /^[a-zёа-яA-ZЁА-ЯA-Za-z0-9](([a-zёа-яA-ZЁА-Яa-zA-Z0-9,=\.!\-#|\$%\^&\*\+/\?_`\{\}~]+)*)@(?:[a-zёа-яA-ZЁА-Я0-9a-zA-Z-]+\.)+[a-zёа-яA-ZЁА-Яa-zA-Z]{2,9}$/;
-    
+    var userName_regexp = /^[a-zа-яёA-ZА-ЯЁ]+([ -]?[a-zа-яёA-ZА-ЯЁ])*$/;
+
     // СЛУШАТЕЛЬ ССЫЛОК
     for (let i = 0; i < links.length; i++ ) {
         links[i].addEventListener('click', function(e) {
@@ -107,7 +108,12 @@ document.addEventListener('DOMContentLoaded', function(){
             name_x_btn.classList.add('display_block');            
             name_x_btn.classList.add('reset_error');
         }
-        if (input_name.value.trim().length > 0) {
+        if (input_name.value.trim().length > 0 && !userName_regexp.test(input_name.value.trim())) {
+            input_name.classList.add('error_color');
+            input_name.parentNode.classList.add('error_color');
+            name_x_btn.classList.add('reset_error');
+        }
+        if (input_name.value.trim().length > 0 && userName_regexp.test(input_name.value.trim())) {
             input_name.classList.remove('error_color');
             input_name.parentNode.classList.remove('error_color');
             name_x_btn.classList.remove('reset_error');
