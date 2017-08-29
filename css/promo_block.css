@@ -1,7 +1,7 @@
 .promo_block {
     font-weight: bold;
     position: relative;
-    width: 1600px;
+    width: 100vw;
     height: 535px;
     margin: 0 auto;
     color: #48b;
@@ -57,6 +57,16 @@
 .promo_block ol li:nth-child(6) p {
     border-bottom: none;
 }
+/* ================================================================
+===================================================================
+================================================================ */
+
+@media all and (max-width: 1600px) {
+    .promo_block {
+        width: 100vw;
+    }
+}
+
 
 /* ================================================================
 ===================================================================
@@ -64,7 +74,7 @@
 
 @media all and (max-width: 1280px) {
     .promo_block {
-        width: 1280px;
+        width: 100vw;
     }
     .promo_block:after {
         top: 25px;
@@ -85,7 +95,7 @@
 
 @media all and (max-width: 1024px) {
     .promo_block {
-        width: 1024px;
+        width: 100vw;
         z-index: -1;
     }
     .promo_block:after {
@@ -108,7 +118,7 @@
 
 @media all and (max-width: 640px) {
     .promo_block {
-        width: 640px;
+        width: 100vw;
         height: 415px;
         margin-top: -134px;
         z-index: -1;
@@ -132,7 +142,7 @@
 
 @media all and (max-width: 320px) {
     .promo_block {
-        width: 320px;
+        width: 100vw;
         height: 585px;
         margin-top: -130px;
         z-index: -1;
@@ -144,9 +154,10 @@
         display: none;
     }
     .promo_block ol {
-        margin-left: -30px;
+        margin-left: 10px;
         padding-top: 130px;
         padding-top: 95px;
+        padding-left: 0;
     }
     .promo_block ol li {
         position: relative;

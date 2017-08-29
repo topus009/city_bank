@@ -1,10 +1,10 @@
 .banner {
-    width: 100%;
+    width: 100vw;
     height: 400px;
     background-image: url(./../src/01.png);
     background-repeat: round;
     -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
 }
 .banner-text {
     padding-top: 21px;
@@ -311,7 +311,7 @@
         padding-top: 12%;
     }
     .banner-text .header {
-        font-size: 40px;
+        font-size: 37px;
     }
     .banner-text .subline {
         width: calc(50% - 23px);

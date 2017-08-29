@@ -1,5 +1,5 @@
 .cards_ {
-    width: 1190px;
+    width: calc(100vw - 90px);
     height: 430px;
     margin: 0 auto;
     margin-top: 45px;
@@ -10,8 +10,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: center;
 }
 .cards_ .row_1 {
     margin-bottom: -5px;
@@ -131,12 +131,12 @@
 
 @media all and (max-width: 1024px) {
     .cards_ {
-        width: 1004px;
+        width: calc(100vw - 20px);
         height: auto;
         margin-top: -20px;
     }
     .cards_ .row_2 {
-        padding-top: 15px;
+        padding-top: 30px;
     }
 }
 
@@ -147,7 +147,7 @@
 
 @media all and (max-width: 640px) {
     .cards_ {
-        width: 620px;
+        width: calc(100vw - 20px);
         height: auto;
         margin-top: -20px;
     }
@@ -158,11 +158,11 @@
         background-repeat: space;
     }
     .cards_ .card p {
-        margin-top: 15px;
+        margin-top: 12px;
         padding-left: 7px;
         padding-right: 7px;
         line-height: 12.5px;
-        font-size: 13px;
+        font-size: 12px;
     }
     .cards_ .card .title {
         padding-top: 8px !important;
@@ -197,7 +197,7 @@
         padding-top: 0;
     }
     .cards_ .row_2 {
-        padding-top: 5px;
+        padding-top: 20px;
     }
     .cards_ .card {
         margin: 0 10px;
@@ -210,11 +210,14 @@
     .cards_ .card p {
         margin-top: 14px;
         padding-left: 20px;
-        padding-right: 8px;
+        padding-right: 12px;
+        font-size: 14px;
+        line-height: 18px;
     }
     .cards_ .card .title {
         padding-top: 3px !important;
         padding-left: 23px;
+        font-size: 24px;
     }
     .cards_ .card .title:after {
         top: 4px !important;
