@@ -1,4 +1,5 @@
 .cards_ {
+    width: -webkit-calc(100vw - 90px);
     width: calc(100vw - 90px);
     height: 430px;
     margin: 0 auto;
@@ -11,7 +12,8 @@
     display: flex;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 .cards_ .row_1 {
     margin-bottom: -5px;
@@ -123,14 +125,9 @@
 .cards_ .row_2 .card:nth-child(2) {
     background-image: url(./../src/06.png);
 }
-
-
-/* ================================================================
-===================================================================
-================================================================ */
-
 @media all and (max-width: 1024px) {
     .cards_ {
+        width: -webkit-calc(100vw - 20px);
         width: calc(100vw - 20px);
         height: auto;
         margin-top: -20px;
@@ -139,14 +136,9 @@
         padding-top: 30px;
     }
 }
-
-/* ================================================================
-===================================================================
-================================================================ */
-
-
 @media all and (max-width: 640px) {
     .cards_ {
+        width: -webkit-calc(100vw - 20px);
         width: calc(100vw - 20px);
         height: auto;
         margin-top: -20px;
@@ -178,11 +170,6 @@
         right: 9px !important;
     }
 }
-
-/* ================================================================
-===================================================================
-================================================================ */
-
 @media all and (max-width: 320px) {
     .cards_ {
         width: 320px;
@@ -191,7 +178,10 @@
     }
     .cards_ .row {
         display: block;
-        justify-content: normal;
+        -webkit-box-pack: normal;
+        -webkit-justify-content: normal;
+            -ms-flex-pack: normal;
+                justify-content: normal;
     }
     .cards_ .row_1 {
         padding-top: 0;
@@ -205,7 +195,8 @@
         margin-bottom: 20px;
         height: 170px;
         background-repeat: space;
-        background-size: cover;
+        -webkit-background-size: cover;
+                background-size: cover;
     }
     .cards_ .card p {
         margin-top: 14px;
@@ -224,12 +215,16 @@
         right: 11px !important;
     }
     .cards_ .card .post {
-        transform: translate(0, 90%) !important;
+        -webkit-transform: translate(0, 90%) !important;
+            -ms-transform: translate(0, 90%) !important;
+                transform: translate(0, 90%) !important;
     }
     .cards_ .row_1 .card .post {
         padding-top: 0;
     }
     .cards_ .card:hover .post {
-        transform: translate(0, 0) !important;
+        -webkit-transform: translate(0, 0) !important;
+            -ms-transform: translate(0, 0) !important;
+                transform: translate(0, 0) !important;
     }
 }
